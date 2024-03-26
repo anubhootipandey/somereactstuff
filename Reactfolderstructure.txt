@@ -1,0 +1,15 @@
+REACTJS PROJECT STRUCTURE:-
+
+1. node_modules:-
+This folder contains all the packages and dependencies that are installed in your react app.
+2. public:-
+The public folder contains static files such as index.html, the icon of the app, images, etc.
+3. src:-
+This is the most important part of the app. Yha pe hm apne app ki coding krte h, in this folder, 
+ham apne sare files ko rakhte h which is related to development jse ki pages, components, CSS files, images, etc.
+4. .gitignore:-
+ye file git ko khti h ki konsi files ko ignore karna h when committing your project to the github repo.
+5. package-lock.json:-
+The goal of this file is to keep track of the exact version of every package that installed in your app.
+6. package.json:-
+ye file contain krti h sare dependencies jo bhi installed  h hmare app me.
