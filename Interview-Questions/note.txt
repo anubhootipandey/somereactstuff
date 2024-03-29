@@ -1,0 +1,33 @@
+/*------------------------TECHNICAL ROUND-----------------------*/
+1.What is arrow function?
+2.What is redux?
+3.What is currying?
+4.Difference between map and filter?
+5.What is webpack?
+6.What do you prefer functional component or class component?
+7.How would you optimize the code?
+8.What is lazy loading?
+9.What is useMemo hook?
+10.Difference between let const and var?
+11.What is hoisting?
+12.What are life-cycle methods?
+13.Can we use hook for class component?
+14.What is clean up function in useEffect?
+15.Difference between spread and rest?
+16.How to add the elements in array?
+17.What is push, pop, slice and splice and three syntax?
+18.What is generator function?
+19.What is callback in javascript?
+20.Explain closure?
+21.Explain call apply and bind?
+22.How to pass data between component?
+23.How to pass the data from child to parent and parent to child?
+24.How to uniquely identify the element?How to remove the duplicate elements in array?
+
+/*-----------------------MANAGER ROUND-------------------------*/
+1.What are your technical skills?
+2.What was my role in current company and current project?
+3.Why do you work on nodejs? Why nodejs is better?
+4.What problem did you faced?
+5.Did you do unit testing?
+6.What tool you used for unit testing?

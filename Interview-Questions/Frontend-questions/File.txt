@@ -1,0 +1,142 @@
+/*----------------JAVASCRIPT QUESTION------------------*/
+
+1.What is closure?
+2.Have you used the concept of closures in any real projects or anywhere?
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3.Difference between promises and async await. And when do we use these?
+Promise->
+A promise is an object that eventually leads to an asynchronous operation’s completion or failure. A promise can be in one of three states: pending, fulfilled, or rejected. 
+When the asynchronous operation is completed, the Promise will either be fulfilled with a value or rejected with an error.
+Async/Await->
+Async/await is a syntactic sugar on top of promises. It provides a more concise way to write asynchronous code, making it easier to read and write. With Async/Await, you can write asynchronous code that looks similar to synchronous code, and it uses promises under the hood.
+In async/await, the async keyword is used to declare an asynchronous function. The await keyword is used to wait for a promise to be resolved before continuing with the execution of the function. The await keyword can only be used inside an async function.
+
+->The only difference is the execution context between promise and async/await.
+When a Promise is created and the asynchronous operation is started, the code after the Promise creation continues to execute synchronously. 
+When the Promise is resolved or rejected, the attached callback function is added to the microtask queue. The microtask queue is processed after the current task has been completed but before the next task is processed from the task queue. 
+This means that any code that follows the creation of the Promise will execute before the callback function attached to the Promise is executed.
+On the other hand, with Async/Await, the await keyword causes the JavaScript engine to pause the execution of the async function until the Promise is resolved or rejected. 
+While the async function waits for the Promise to resolve, it does not block the call stack, and any other synchronous code can be executed. Once the Promise is resolved, the execution of the async function resumes, and the result of the Promise is returned. 
+If rejected, it throws an error value.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+4.Difference between asynchronous and synchronous?
+Synchronous function execute your code one after the other it can only process one code at a time till the code stack is empty while Asynchronous means you can skip a a steps within a code. 
+For example lets say you are building an app and you request a data from online and that data is what your user see when the visit your website, then if there is network delay in the site you request the data your page will not open till it fetches that data. 
+While if you used asynchronous function, you might decide to render some part of your app so that your users will not have to staring at a blank page(that is not a good user experience). 
+O hope i answered your question but if it's not still clear let me know i can help demonstrate by using some code as an example...
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+5.What is event loop and What it does?
+6.What is prototype in javascript?
+7.What do you understand by memorization?
+8.What do you understand by event bubbling?
+
+/*----------------------REACT QUESTION---------------------*/
+
+1.How do you pass different data with different components?
+Approachs to pass data between components in react
+1. Passing data from Parent to Child in React
+For passing data from parent to child component, we use props. Props data is sent by the parent component and cannot be changed by the child component as they are read-only.
+
+2. Passing data from Child to Parent Component
+For passing the data from the child component to the parent component, we have to create a callback function in the parent component and then pass the callback function to the child component as a prop. 
+This callback function will retrieve the data from the child component. The child component calls the parent callback function using props and passes the data to the parent component.
+
+3. Passing data between Siblings
+For passing data among siblings, there are multiple methods we can choose from as shown below:
+Combination of the above two methods (callback and use of props).
+Using Redux.
+ContextAPI
+Here we will use context API to pass the data. When the button in child1 is clicked it will update the data in the Child2 component.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2.When you have to pass data to the e level skipping b, c, d . What do you do to handle situation like this?
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3.What is prop drilling?
+Prop drilling, also known as "threading props" or "component chaining," refers to the process of passing data from a parent 
+component down to nested child components through props.
+Consider a scenario where you have a top-level component that fetches data from an API and needs to pass this data down to multiple nested child components.
+
+Instead of directly passing the data to each child component, you pass it through each intermediary component in the hierarchy until it reaches the desired child component. 
+This passing of props through multiple levels of components is what prop drilling entails.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+->Why is prop drilling a problem?
+Passing props through multiple layers of components complicates the codebase and makes it harder to reason about data flow. 
+Performance Overhead: Prop drilling can impact application performance, especially when dealing with large-scale applications.
+---------Challenges of Prop Drilling-------
+1->Complexity and Boilerplate Code
+Prop drilling can lead to increased complexity and boilerplate code, especially in large component trees. 
+As components get nested deeper, managing the flow of props becomes more challenging and can clutter the codebase.
+2->Component Coupling
+Prop drilling can tightly couple components together, making it harder to refactor or restructure the component 
+hierarchy without affecting other parts of the application. This can result in decreased maintainability and flexibility.
+3->Performance Overhead
+Passing props through multiple levels of components can introduce performance overhead, especially if the props contain large amounts of data.
+Each intermediary component in the hierarchy has to re-render when the props change, potentially leading to unnecessary re-renders and impacting performance.
+
+---------How to Overcome Prop Drilling----------------------
+There are several techniques to overcome prop drilling in React.js:
+A->Context API: React's Context API allows you to share data across the component tree without explicitly passing props through each level of the hierarchy. 
+Context provides a way to pass data through the component tree without having to pass props down manually at every level.
+B->State Management Libraries: Using state management libraries like Redux or MobX can help centralize and manage application state, reducing the need for prop drilling.
+C->Higher-Order Components (HOCs): HOCs are functions that accept a component as input and return a new component with additional props or functionality. 
+They can be used to inject props without directly passing them down through every intermediate component.
+D->Render Props: Render props is a technique for sharing code between React components using a prop whose value is a function. This allows components to share code without resorting to prop drilling.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4.Which one is better redux or contextAPI? And when should we use what?
+If your React Native application is small to medium-sized and doesn't require complex state management, then Context API is a good choice. 
+If your application is large and complex and requires more advanced state management features, then Redux is a better choice.
+
+->When deciding between using Context API or Redux:-
+If you’re using Redux just to avoid passing props, you can switch to Context API instead. Context API is perfect for sharing small bits of information between components. 
+On the other hand, Redux is more powerful and comes with helpful features that Context API doesn’t have. It’s great for managing big chunks of data and handling requests to APIs.
+
+The difference between Context API and Redux lies in how they handle state changes. Redux takes a centralized approach, where state changes are managed in a central store. 
+On the other hand, Context API deals with state changes on a components level, as they happen within each component.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+5.Limitations of react?
+
+A->Lack of Proper Documentation: There are a lot of tools and libraries like Redux and Reflux that can boost the performance of React. 
+Even React itself is updated regularly. Unfortunately, that comes with a downside. Some developers think that React technologies are updating and accelerating so fast that there is no time to document it or write proper instructions. Developers are left with only sparse text guides that don’t cover the details.
+B->Development Speed: While some people argue that React is constantly being improved and making their jobs easier, it may still be perceived as something negative. 
+The reason for it is because everything is constantly evolving, resulting in developers being displeased by the need for constant relearning of processes or new mechanics and some developers might not be comfortable with keeping up with such a pace.
+C->JSX Complexity: JSX would be considered as an advantage by most people, rather than a disadvantage, and yet, it may also be seen as a stumbling block. 
+It might cause confusion to those who are not much familiar with it.
+JSX in simple terms is a JavaScript extension that can make the code more readable and clean. The mix of HTML and JavaScript in JSX makes React JS much more complicated to learn and that may be unappealing to aspiring developers. 
+Developers and designers complain about complications in learning JSX and the consequent hard learning curve.
+D->Problems With SEO: There have been concerns that Google used to have problems with indexing dynamic websites with client-side rendering. Thus, it requires much expertise from developers. 
+If done wrong, it would not be possible for it to work.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+6.Difference between controlled and uncontrolled components in react?
+Uncontrolled Components->
+Uncontrolled Components are the components that are not controlled by the React state and are handled by the DOM (Document Object Model). 
+So in order to access any value that has been entered we take the help of refs.
+For instance, if we want to add a file as an input, this cannot be controlled as this depends on the browser so this is an example of an uncontrolled input.
+
+Controlled Components->
+In React, Controlled Components are those in which form’s data is handled by the component’s state. It takes its current value through props and makes changes through callbacks like onClick, onChange, etc. 
+A parent component manages its own state and passes the new values as props to the controlled component.
+Example: We are creating a state name that stores the value we enter into the input field using the useState hook. We are creating an onChange function in the input field that stores the data we are entering in the input field to our state. 
+There is another function handleSubmit that gets triggered when we submit the form and it shows the name we have entered on the alert box.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+7.Few ways to optimize the react app performance ?
+------->use React.memo everywhere, it is a pure component basically what it does is compare the props and state and 
+if the props and state are like before our render whatever the props and states are there and after the render whatevet the
+props and state are there if both the things are same it won't re render the component because it does not need 
+as the props are not changing.
+------->In every function, we can use useCallback and useMemo, so what happens is when we have a function, it's an object
+and even if the function is same so I'm using react.memo to optimize the performance, like we will be doing the comparison
+between the props and states but now if I'm passing the function in the props and this functions are objects and what happen in
+javascript is two objects cannot be same, until and unless the memory address of these objects are same, they won't be considered
+as same, even if they are same. Like if I have a function which do three steps and another function which do the exact three
+steps but still javascript won't say that these two are same because it checks for the memory reference of these objects
+so to keep that memory reference same we can use useCallback for functions and for objects and arrays we can use useMemo.
+------->We can use Frameworks like next.js
