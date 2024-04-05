@@ -33,3 +33,21 @@ site scripting(XSS) vulnerabilities.
 10.What is React Developer Tool?
 ---The React Developer Tool is a browser extension that allows developers to inspect and debug React Components hierarchies
 in the Chrome and Firefox browsers.
+
+11.How does React handle prop drilling, and how can it be avoided?
+---Prop Drilling occurs when props are passed down through multiple levels of components.
+---It can be avoided by using context or state management libraries like Redux.
+
+12.Explain Error Boundaries in React?
+---Error Boundaries are components that catch JavaScript errors anywhere in their child component tree and log those errors,
+display a fallback UI, or take other actions.
+
+13.What are React Portals?
+---React Portals provide a way to render children into a DOM node that exists outside the parent component's hierarchy.
+
+14.What is the purpose of useLayoutEffect Hook?
+---useLayoutEffect is similar to useEffect, but it fires synchronously after all DOM mutations. It is often used for measuring
+and synchronizing layout.
+
+15.Explain the concept of useDebugValue hook.
+---useDebugValue is used to display a label for custom hooks in React DevTools.
