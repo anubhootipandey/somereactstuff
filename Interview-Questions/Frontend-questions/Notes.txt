@@ -1,0 +1,15 @@
+1. Custom Hooks for api calling and what they do and give example.
+2.useRef uses in raectjs
+3.useContext uses
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1.What is Closures and what they use for and when we can use them?
+2. How javascript is single-threaded? How the async features works?
+3. Is setTimeout is javascript programming or something else?
+------>setTimeout is not part of js engine, it is a part of javascript engine. So this setTimeout and apis all are part of browser
+    and browser takes care of these things like they are the web apis.
+4.How DOM is differently used in react?
+
+5.Why does React use CamelCase?
+This convention helps distinguish custom hooks from regular functions and helps React apply the necessary rules and optimizations. 
+Use CamelCase: Following JavaScript conventions, the name of the custom hook should use CamelCase.

@@ -1,6 +1,7 @@
 /*----------------JAVASCRIPT QUESTION------------------*/
 
 1.What is closure?
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 2.Have you used the concept of closures in any real projects or anywhere?
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 3.Difference between promises and async await. And when do we use these?
@@ -24,7 +25,6 @@ If rejected, it throws an error value.
 Synchronous function execute your code one after the other it can only process one code at a time till the code stack is empty while Asynchronous means you can skip a a steps within a code. 
 For example lets say you are building an app and you request a data from online and that data is what your user see when the visit your website, then if there is network delay in the site you request the data your page will not open till it fetches that data. 
 While if you used asynchronous function, you might decide to render some part of your app so that your users will not have to staring at a blank page(that is not a good user experience). 
-O hope i answered your question but if it's not still clear let me know i can help demonstrate by using some code as an example...
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 5.What is event loop and What it does?
@@ -36,14 +36,14 @@ O hope i answered your question but if it's not still clear let me know i can he
 
 1.How do you pass different data with different components?
 Approachs to pass data between components in react
-1. Passing data from Parent to Child in React
+A. Passing data from Parent to Child in React
 For passing data from parent to child component, we use props. Props data is sent by the parent component and cannot be changed by the child component as they are read-only.
 
-2. Passing data from Child to Parent Component
+B. Passing data from Child to Parent Component
 For passing the data from the child component to the parent component, we have to create a callback function in the parent component and then pass the callback function to the child component as a prop. 
 This callback function will retrieve the data from the child component. The child component calls the parent callback function using props and passes the data to the parent component.
 
-3. Passing data between Siblings
+C. Passing data between Siblings
 For passing data among siblings, there are multiple methods we can choose from as shown below:
 Combination of the above two methods (callback and use of props).
 Using Redux.
