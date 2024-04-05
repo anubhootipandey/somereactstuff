@@ -13,3 +13,23 @@
 5.Why does React use CamelCase?
 This convention helps distinguish custom hooks from regular functions and helps React apply the necessary rules and optimizations. 
 Use CamelCase: Following JavaScript conventions, the name of the custom hook should use CamelCase.
+
+6.Explain the concept of lifting state up?
+--Lifting state up is a pattern where the state of a child component is moved to its parent component, allowing multiple child
+components to share the same state.
+
+7.What are controlled components in React?
+---Controlled components are components where the form data is controlled by React state.
+---The input elements receive their current value from state and have their value updated through a callback function.
+
+8.What is the significance of the key attribute in React?
+---The key attribute is used to uniquely identify elements in a list.
+---It helps React efficiently update the DOM when the list changes.
+
+9.What is the significance if dangerouslySetInnerHTML property im React?
+---dangerouslySetInnerHTML is used to inject HTML directly into a component, but it should be used with caution to avoid cross
+site scripting(XSS) vulnerabilities.
+
+10.What is React Developer Tool?
+---The React Developer Tool is a browser extension that allows developers to inspect and debug React Components hierarchies
+in the Chrome and Firefox browsers.
