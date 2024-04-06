@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
+
 const useWindowDimensions = () => {
 	  const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
-
 	  useEffect(() => {
 		    const handleResize = () => {
 			      setDimensions({
@@ -9,10 +9,8 @@ const useWindowDimensions = () => {
 				        height: window.innerHeight
 			      });
 		    }
-
 		    window.addEventListener('resize', handleResize);
 		    handleResize();
-
 		    return () => {
 			      window.removeEventListener('resize', handleResize);
 		    };

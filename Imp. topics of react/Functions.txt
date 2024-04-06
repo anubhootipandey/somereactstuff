@@ -1,0 +1,398 @@
+<-------------------------------------------*******FUNCTIONS*******------------------------------------------------------>
+
+Functions-->
+In JavaScript, a function is a block of code that can be defined and invoked to perform a specific task. 
+Functions are a fundamental building block of the language, and they are widely used in many different contexts.
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+# Declaring Functions
+There are several ways to declare a function in JavaScript. The most common way is to use the function declaration 
+syntax, which involves specifying the function name, parameters, and body.
+
+Example 1: Declaration syntax
+
+function add(x, y) {
+	  return x + y;
+}
+
+You can also declare a function using the function expression syntax, which involves assigning a function to a variable.
+
+Example 2: Expression syntax
+
+const add = function(x, y) {
+	  return x + y;
+};
+
+The ES6 update introduced what is now known as arrow functions. This syntax is particularly useful when working with 
+simple functions that could be written on just one line.
+
+Example 3: Arrow functions
+
+const add = (x, y) => {
+    return x + y
+}
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+# Invoking Functions
+To invoke a function, you can use the function name followed by a set of parentheses that may contain zero or more 
+arguments.
+
+Example: Invoking a function
+
+console.log(add(1, 2)); // 3
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+# Function Parameters and Arguments
+A function's parameters are the variables that are defined in the function declaration and represent the values that 
+are passed to the function when it is invoked. A function's arguments are the actual values that are passed to the 
+function when it is invoked.
+
+Example: Parameters and arguments
+
+function add(x, y) { // parameters
+	  return x + y;
+}
+console.log(add(1, 2)); // arguments
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+# Return Values
+A function can return a value using the return keyword. The return keyword immediately terminates the function and 
+specifies the value that is returned to the caller.
+
+Example: Return value
+
+function add(x, y) {
+	  return x + y;
+}
+console.log(add(1, 2)); // 3
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+# Function Scopes
+A function's scope is the set of variables that are visible to the function when it is executed. A function has 
+access to its own variables, as well as to the variables of its enclosing scope.
+
+Example: Scope
+
+const x = 'global';
+function foo() {
+	  const x = 'local';
+	  console.log(x);
+}
+foo(); // 'local'
+console.log(x); // 'global
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+# Closures
+A closure is a function that has access to the variables of its enclosing scope, even after the function has returned.
+
+Example: Closure
+
+function makeAdder(x) {
+	  return function(y) {
+	    return x + y;
+	  };
+}
+const add5 = makeAdder(5);
+console.log(add5(2)); // 7
+console.log(add5(3)); // 8
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+# Functional components
+We don’t have to look too far to find the first example of how functions can be used in React applications. 
+After all, React applications are assembled from independent blocks of code called components which can be 
+defined with the help of function syntax. Take a look at the example below to refresh your memory.
+
+In the below code snipped we have written a component called App, via the function declaration syntax. 
+In the first part, we used the ES6 Arrow function and in the second one, we used the traditional syntax. 
+Both are equally valid, however, in reacterry we prefer to use the ES6 syntax.
+
+Example 8: Functional component.
+
+const App = () => {
+	  return (
+	    <h1>Hello world!</h1>
+	  )
+}
+export default App
+...
+...
+...
+function App() {
+	  return (
+	    <h1>Hello world!</h1>
+	  )
+}
+
+export default App
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+# Event handlers
+Just like in all other web apps, in React we are dealing with events and event handlers. The list of all possible 
+events goes on forever, so in this article, we will be focusing just on the simplest onClick and its handlers.
+
+Handler is nothing else than a function which responds to a given event happening within our application. 
+In the snippet below you can we that we have defined the handleClick function and passed it to the onClick property 
+on the button. By doing so we’ve simply defined the following behaviour: “When the user clicks on the button, 
+the application logs ‘Click!’ to the console”.
+
+Example 1: simple onClick event
+
+const App = () => {
+	  const handleClick = () => {
+	    console.log('Click!')
+	  }
+
+	  return (
+	    <button onClick={handleClick}>Click to console log</button>
+	  )
+}
+export default App
+
+If the handler function is very simple, then you can simply define it as an inline function. This is a very common 
+and useful technique as it can reduce the number of code lines. Take a look below where we removed the handleClick 
+function.
+
+On a side note, have you also noticed how much cleaner the functional components look as opposed to the class ones?
+
+Example 2: inline onClick handler
+
+Functional
+Class
+const App = () => {
+	  return (
+		    <button onClick={() => console.log('Click!')}>Click to console log</button>
+	  )
+}
+export default App
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+# Example with the event object--->
+a.An event object is an object that contains information about the event that has occurred. It is passed as the 
+first argument to the function that is executed when the event occurs.
+b.In the below example, the handleClick function is passed the event object as the first argument. The event object 
+has a lot of information about the underlying ‘event’ that triggered it.
+c.For instance, you can access the event.target which refers to the element that was clicked, the event.type which 
+refers to the type of event, or event.clientX and event.clientY which refer to the coordinates of the mouse cursor, 
+at the time of the click.
+
+Example 1: event object handler
+
+Functional
+Class
+const App = () => {
+	  const handleClick = (event) => {
+		    console.log(event.target)  // <button>Click me!</button>
+		    console.log(event.type)    // click
+		    console.log(event.clientX) // ex. 25
+		    console.log(event.clientY) // ex. 11
+	  }
+
+	  return (
+		    <button onClick={handleClick}>Click me!</button>
+	  )
+}
+export default App
+
+---At some point in your life, you must have written the classic counter example. It’s a very simple yet very 
+effective component when it comes to understanding events and their impact on our apps.
+
+---In the below example, we have defined a piece of state called count which tracks how many times the user clicked 
+on the Increment vs Decrement button.
+---Every time the user clicks on the Increment button, we increase the current count by 1 and every time they click 
+on the Decrement button, we decrease it by 1. We then display the current live count in the h1 element for the 
+user to inspect.
+---Notice that we used the inline arrow function that executes setCount with the new value of count (because count + 1 
+is an expression that evaluates to number).
+
+Example 2: counter example
+
+Functional
+Class
+import React, { useState } from 'react';
+
+const App = () => {
+	  const [count, setCount] = useState(0);
+
+	  return (
+		    <>
+			      <h1>Count: {count}</h1>
+			      <button onClick={() => setCount(count + 1)}>Increment</button>
+			      <button onClick={() => setCount(count - 1)}>Decrement</button>
+		    </>
+	  );
+}
+export default App;
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+# Utils---->
+
+--Very often we need to perform certain operations on the data. We can abstract out such logic into helper or util functions. 
+If we ever need to perform the same operation in a different place of our application when we can simply import the 
+util function without having to rewrite the bunch of code.
+--Take a look at the example below where we have access to the first and last names. We have written the formatGreeting 
+function which takes in the first and last name as arguments and returns the personalised greeting.
+
+Example: util example
+import React from 'react';
+
+const formatGreeting = (first, last) => {
+	  return 'Hello, ' + first + ' ' + last + '!'
+}
+
+const App = ({ firstName, lastName }) => {
+	  const greeting = formatGreeting(firstName, lastName)
+
+	  return <h1>{greeting}</h1>
+}
+export default App
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+# Conditional rendering--->
+
+Functions are also very useful when it comes to managing the conditional code in our applications. Sometimes our 
+application needs to respond differently to various conditions or types as in the below example.
+
+Moving the switch statement into its own function improves the readability of the component.
+
+Example : conditional rendering
+
+import React from 'react';
+const renderContent = (type) => {
+	  switch (type) {
+		    case "A":
+			      return <p>Type A content</p>;
+		    case "B":
+			      return <p>Type B content</p>;
+		    case "C":
+			      return <p>Type C content</p>;
+		    default:
+			      return <p>Unknown content</p>;
+	  }
+}
+
+const App = () => {
+	  return (
+		    <div>
+			      {renderContent('A')}
+		    </div>
+	  );
+}
+export default App;
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+# API calls
+Most of the applications out there are interacting with APIs, you can use functions to effectively manage your API calls.
+
+In the following example, we have written the fetchData function which manages the API call for us. Within the function, we used the very popular axios library. Now every time we need to retrieve some data via APIs we can simply pass the relevant URL to our fetchData function and it’s all done!
+
+Take a look at the below example. It’s a fairly complex one, but it demonstrates the point quite well.
+
+Example : API calls
+
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
+const fetchData = async (url) => {
+		try {
+		    const response = await axios.get(url)
+		    return response.data
+	  } catch (error) {
+		    return error;
+	  }
+}
+
+const App = () => {
+	  const [data, setData] = useState(null);
+
+	  useEffect(() => {
+		    const fetchAPI = async () => {
+			      const data = await fetchData('https://jsonplaceholder.typicode.com/todos/1');
+			      setData(data);
+		    }
+		    fetchAPI();
+  }, []);
+
+  if (!data) {
+	    return <p>Loading...</p>
+  }
+
+	  return (
+		    <div>
+			      <h1>API Data</h1>
+			      <pre>{JSON.stringify(data, null, 2)}</pre>
+		    </div>
+	  );
+}
+
+export default App;
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+# Custom hooks---->
+ 
+a.Custom hooks in React are a way to extract and reuse component logic. They allow you to share logic across different 
+components, making your code more modular and easier to maintain.
+
+b.One of the main benefits of using custom hooks is that they enable you to extract complex logic from your components 
+and encapsulate it into a self-contained, reusable function. This can make your components cleaner and easier to read, 
+as well as improve the overall performance of your application.
+
+c.Many React applications need to check the width and height of the current viewport on the user's machine. 
+This information is needed for presenting relevant interfaces. The example below defines a useWindowDimensions 
+hook (via arrow function).
+
+d.The logic of custom hooks goes a little bit of the scope of this article so we won’t touch on it here. It’s just 
+another good point that illustrates how useful functions can be React.
+
+Example: Custom hooks
+
+import React, { useState, useEffect } from 'react';
+const useWindowDimensions = () => {
+	  const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
+
+	  useEffect(() => {
+		    const handleResize = () => {
+			      setDimensions({
+				        width: window.innerWidth,
+				        height: window.innerHeight
+			      });
+		    }
+
+		    window.addEventListener('resize', handleResize);
+		    handleResize();
+
+		    return () => {
+			      window.removeEventListener('resize', handleResize);
+		    };
+	  }, []);
+
+	  return dimensions;
+}
+
+const App = () => {
+	  const { width, height } = useWindowDimensions();
+
+	  return (
+		    <div>
+			      <h1>Window dimensions</h1>
+			      <p>Width: {width}</p>
+			      <p>Height: {height}</p>
+		    </div>
+	  );
+}
+
+export default App;
+
+---------------------------------------------------------------------------------------------------------------------------------------------
