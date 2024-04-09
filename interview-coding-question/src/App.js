@@ -1,14 +1,14 @@
 import React from 'react'
-import List from './components/List'
-// import Country from './components/Country'
+// import List from './components/List'
+import Country from './components/Country'
 // import { CheckBox } from '@mui/icons-material'
 
 const App = () => {
   return (
     <div>
-      {/* <Country /> */}
+      <Country />
       {/* <CheckBox /> */}
-      <List />
+      {/* <List /> */}
     </div>
   )
 }
