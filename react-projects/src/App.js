@@ -1,5 +1,7 @@
 import './App.css';
-import RecipeFinder from './components/RecipeFinder';
+import Counter from './components/Counter';
+// import RandomColor from './components/RandomColor';
+// import RecipeFinder from './components/RecipeFinder';
 // import GithubuserSearch from './components/GithubuserSearch';
 // import ShoppingList from './components/ShoppingList';
 // import Quote from './components/Quote';
@@ -12,7 +14,9 @@ function App() {
       {/* <Quote /> */}
       {/* <ShoppingList /> */}
       {/* <GithubuserSearch /> */}
-      <RecipeFinder />
+      {/* <RecipeFinder /> */}
+      {/* <RandomColor /> */}
+      <Counter />
     </div>
   );
 }
