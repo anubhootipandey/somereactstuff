@@ -58,3 +58,20 @@ Event propagation is the process by which the browser decides which objects to t
 
 20.Which is used to pass data to a component from outside in React?
 --Props can be used to pass dynamic data to a component. When the data in the props changes, the component re-renders.
+
+21.If a function component should always render the same way given the same props, what is a simple performance optimization available for it?
+--Wrap it in the React.memo higher-order component.
+
+22.Regarding React js events, Which statement is true?
+--Parent component can pass event handler function as props to child component and then this can be used to handle the event. Thus we can say that events raised in the child component can be handled in the parent component.
+
+23.Why is it important to avoid copying the values of props into a component's state where possible?
+-- because you want to allow a component to update in response to changes in the props
+
+24.What are the children’s props?
+--a property that lets you pass components as data to other components.
+
+25.What is Reconciliation?
+--Reconciliation is the process through which React updates the DOM. React use a “diffing” algorithm so that component updates are predictable and faster. React would first calculate the difference between the real DOM and the copy of DOM when there’s an update of components. Once it is finished calculating, the new update would be reflected on the real DOM.
+
+26

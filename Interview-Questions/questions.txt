@@ -222,3 +222,5 @@ import React, { useState } from "react";
 Later we use useState like:
 const [currentStateValue, functionToUpdateState] = useState(initialStateValue);
 
+Q15. How do React Components Communicate with each other?
+(Google)
