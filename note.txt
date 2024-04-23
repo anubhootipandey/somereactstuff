@@ -74,4 +74,5 @@ Event propagation is the process by which the browser decides which objects to t
 25.What is Reconciliation?
 --Reconciliation is the process through which React updates the DOM. React use a “diffing” algorithm so that component updates are predictable and faster. React would first calculate the difference between the real DOM and the copy of DOM when there’s an update of components. Once it is finished calculating, the new update would be reflected on the real DOM.
 
-26
+26.referring parent class in React.js?
+--As super is used for referring to the parent class.
