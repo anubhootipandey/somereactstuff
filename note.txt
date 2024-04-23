@@ -76,3 +76,5 @@ Event propagation is the process by which the browser decides which objects to t
 
 26.referring parent class in React.js?
 --As super is used for referring to the parent class.
+
+27.
