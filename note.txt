@@ -34,3 +34,27 @@ Event propagation is the process by which the browser decides which objects to t
 
 12.In which part does the form validation occur?
 --The data information from the client-side is first sent to the server-side. Form validation used to occur at the server after the client had entered all necessary data and then pressed the Submit button.
+
+13.What is the purpose of data format validation?
+--The data entered through the server-side is used for validation. The data that is entered must be checked for correct form and value. This would need to put more logic to test the correctness of data.
+
+14.How can you set a default value for an uncontrolled form field?
+--We can set a default value for an uncontrolled form field by using the defaultValue property.
+
+15.property of the JSON() method?
+--JSON is frequently used to send and receive data from a web server. The data that is sent to a web server must be a string. In that scenario, the js object is converted to a string using JSON.stringify().
+
+16.React Lifecycle method static getDerivedSateFromProps(props , state) is called when ____
+-- static getDerivedSateFromProps(props, state) is called in both cases, when the component is created and when the component is updated
+
+17.the React.js Lifecycle method static getDerivedSateFromProps(props, state) is called?
+--In React.js, the static getDerivedSateFromProps(props, state) is called in both cases when a component is created and when a component is updated.
+
+18.How many stages are there in React js life cycle?
+--In React Lifecycle there are 3 stages: Mount, Update, and Unmount.
+
+19.What will happen if you render an input element with disabled = {false}
+--It will be rendered as enabled.
+
+20.Which is used to pass data to a component from outside in React?
+--Props can be used to pass dynamic data to a component. When the data in the props changes, the component re-renders.

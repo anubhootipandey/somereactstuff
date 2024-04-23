@@ -97,3 +97,91 @@ In a React app, this would be written as follows:
 Say Hello
 <button>
 
+Q9.What are the different lifecycle methods in React? (Gojek)
+Answer: Every component in React has lifecycle methods that we can tap into,
+to trigger changes at a particular phase of the life cycle.
+Each component in react goes through three phases: Mounting, Updating and
+Unmounting.
+There are corresponding lifecycle methods for each of the three phases:
+Mounting:
+There are four built-in lifecycle methods that are called in the following order
+when a component is mounted:
+constructor( ) - This is called before anything else. We can set the initial state of
+the component inside this method. The constructor method is used to set the
+initial state and bind methods to the component.
+getDerivedStateFromProps( ) - This is called before rendering the elements in
+the DOM.
+In this method, we can set the state of the component based on the props we
+received. This method is used very rarely.
+render( ) - This is the only required method in the class component. This method
+returns the HTML elements which are going to be rendered inside the DOM.
+componentDidMount( ) - It is called right after the component is rendered inside
+the DOM. All the statements which require the DOM nodes can be executed in
+this method. Network requests from a remote end-point can also be instantiated
+in this method.
+Updating:
+Updates in react are caused by changes in state or props. Update leads to
+re-rendering of the component. The following methods are called when a
+component is re-rendered:
+getDerivedStateFromProps( ) - This method is called again when a component is
+being re-rendered.
+shouldComponentUpdate( ) - This method is called before rendering the
+component when new props are received. It lets React know if the component’s
+output is affected by the newly received props or by the state change. By default,
+it returns true.
+render( ) - To re-render the HTML inside the DOM, the render( ) method gets
+called again.
+getSnapshotBeforeUpdate( ) - This method is called just before the newly
+rendered HTML gets committed to the DOM. It stores the previous state of the
+component so that React has an idea of what parts of the DOM need to be
+updated.
+componentDidUpdate( ) - It is called after the component gets re-rendered. This
+method works just like the componentDidMount( ) method, the difference is that
+this method does not get called on initial render.
+Unmounting:
+componentWillUnmount( ) - This method is called just before the component
+gets destroyed. Any cleanup statements should be executed inside this method.
+
+Q10.What Is the concept of Mounting in React.JS? (Amazon)
+Answer: The name is self-explanatory. Mounting is the phase in which our React
+component mounts on the DOM (i.e., is created and inserted into the DOM).
+This phase comes onto the scene after the initialization phase is completed. In
+this phase, our component renders the first time. The methods that are
+available in this phase are:
+1. componentWillMount()
+This method is called just before a component mounts on the DOM or the
+render method is called. After this method, the component gets mounted.
+Note: You should not make API calls or any data changes using this.setstate in
+this method because it is called before the render method. So, nothing can be
+done with the DOM (i.e. updating the data with API response) as it has not been
+mounted. Hence, we can’t update the state with the API response.
+2. componentDidMount()
+This method is called after the component gets mounted on the DOM. Like
+componentWillMount, it is called once in a lifecycle. Before the execution of this
+method, the render method is called (i.e., we can access the DOM). We can make
+API calls and update the state with the API response.
+
+Q11.What is the Difference Between Rendering And Mounting?
+(OYO)
+Answer: In a React component, initial rendering happens before mounting.
+Rendering returns the elements which are supposed to be mounted in the DOM.
+Mounting a react component means the actual addition of the DOM elements
+created by the react component into the browser DOM for the first time.
+Following are some of the React life cycle functions associated with ‘mounting’.
+● componentWillMount()
+● componentDidMount()
+● componentWillUnmount()
+componentWillMount() will be invoked right after constructor(), but before
+render().
+componentDidMount() will be called after the first time render() method is called
+in a component and the result is updated in the DOM. This function invokes only
+once in the lifetime of a react component.
+componentWillUnmount() too will be called only once in the lifetime of a react
+component, but that happens right before the component is unmounted from
+the DOM. You can use this method to write the cleanup code for the component
+if any.
+render() function will be invoked every time rerendering happens in the
+component. It may happen either through a state change or a prop change.
+The main difference between mounting and rendering is that mounting happens
+once, but rendering can happen any number of times.
+
