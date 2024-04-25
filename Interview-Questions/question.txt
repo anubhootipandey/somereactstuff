@@ -1,0 +1,51 @@
+-------------------Javascript-----------------------
+1.Difference between let, var and const?
+--var: Think of var as the classic, old-school way of declaring variables in JavaScript. It has function-level scope, which means it's accessible anywhere within the function it's declared in, even before the actual declaration (due to hoisting). Outside of functions, var variables are scoped globally.
+--let: let is like the modern, more disciplined sibling of var. It has block-level scope, meaning it's only accessible within the block it's declared in (like loops or if statements). Also, let doesn't get hoisted to the top of its block, so you can't use it before it's declared.
+--const: const is short for "constant." Once you assign a value to a const variable, you can't change it later. It also has block-level scope like let. So, if you know a variable shouldn't change throughout your program, use const. But remember, it doesn't mean the value itself is immutable; it just means you can't reassign the variable to a different value.
+
+2.What is hoisting?
+--In simpler terms, hoisting in JavaScript is like the lifting of declarations to the top of their containing scope during the compilation phase, before the code actually runs.
+--Imagine you're organizing a messy room. Before you start cleaning, you gather up all the scattered items and put them in their proper places. Hoisting works similarly in JavaScript: before executing your code, JavaScript moves variable and function declarations to the top of their containing scope.
+--For example, if you declare a variable or a function somewhere within a block of code, JavaScript acts as if you've declared it at the very beginning of that block. This means you can use the variable or call the function even before they're actually declared in the code.
+--Here's a simple analogy: think of hoisting like a magic trick where all your declarations are secretly moved to the top of your code's "hat" before the "show" (execution) begins, making everything appear to be in order from the start.
+
+3.How asynchronous operations are handled in JavaScript?
+--In simpler terms, asynchronous operations in JavaScript are like tasks that don't necessarily happen right away. Instead, they occur in the background while other parts of your code keep running.
+--Imagine you're cooking dinner and waiting for the water to boil. Instead of staring at the pot until it boils, you set a timer and go chop some vegetables. When the timer goes off, you check on the pot. That's asynchronous: you're doing other things while waiting for one task to finish.
+--In JavaScript, common asynchronous operations include fetching data from a server, reading files, or waiting for user input. These tasks take time, so instead of blocking the whole program, JavaScript allows you to keep doing other things while waiting for them to finish.
+--You typically handle asynchronous operations using techniques like callbacks, promises, or async/await syntax. These tools let you specify what to do once the asynchronous task is complete, so your code stays responsive and doesn't freeze while waiting for long-running tasks to finish.
+
+4.What is promise from the perspective of Javascript?
+--In simpler terms, a promise in JavaScript is like a guarantee that something will happen in the future. It's a placeholder for a value that's not available yet but will be available at some point.
+--Imagine ordering a pizza: when you call to order, you're given a promise that your pizza will be delivered. You don't have the pizza yet, but you trust that it will arrive. Similarly, when you make a promise in JavaScript, you're saying, "I'll do this thing, and when I'm done, I'll let you know."
+--Promises help manage asynchronous operations, like fetching data from a server or reading a file, where you don't know exactly when the operation will complete. With a promise, you can specify what should happen when the operation succeeds or fails, making it easier to handle asynchronous code in a more organized and readable way.
+
+5.What is closures?
+--Closures in simpler terms are like self-contained packets of code that remember the environment in which they were created. Imagine a closure as a function bundled up together with all the variables it needs from the environment around it, even after that surrounding environment is gone.
+--Here's an analogy: Think of a closure like a lunchbox. Inside the lunchbox, you pack not only the sandwich (the function) but also all the ingredients (variables) needed to make that sandwich. Even if you take the lunchbox to a different place (where the original environment is gone), you still have everything you need to make and enjoy that sandwich.
+--So, closures allow functions to access and manipulate variables from their surrounding scope even after the outer function has finished executing. They're particularly useful for creating functions with persistent state or for creating private variables in JavaScript.
+
+---------------------------React----------------------
+
+1.What is Virtual DOM?
+2.What is declarative and imperative programming?
+--react is declarative and jQuery and JavaScript is imperative 
+--imperative means we have to write more code in order to do something 
+--declarative if something is declarative it will require less code to implement same feature .
+
+3.What is state in React?
+--In simpler terms, "state" in React is like the memory of a component. Imagine a component as a little box that can hold information. This information can change over time, just like how a game character's health can go up or down. State is where React keeps track of this changing information inside the component.
+--For example, in a simple counter component, the state might hold the current count value. When you click a button to increase the count, React updates this state to reflect the new count value.
+--So, think of state as a little notebook inside each component where React writes down and remembers important information that might change as the user interacts with your app.
+                               ****OR****
+--In the context of React, "state" specifically refers to the current data that a component is managing and using to render itself on the screen. This data can change over time based on user interactions or other factors, and when it does, React automatically updates the component to reflect those changes. So, you can think of state as the dynamic aspect of a component that makes it responsive and interactive.
+
+4.Instead of States why don't we use normal variables like let const?
+--In React, while you can use normal variables like let and const, they are typically used for data that doesn't affect the UI directly. However, when you're dealing with data that does influence what is shown on the screen, it's often better to use React's state mechanism for a few reasons:
+--Reactivity, Component Isolation, Performance Optimization, Immutability
+
+5.What is variable shadowing?
+--Variable shadowing occurs when a variable declared within a certain scope (such as a function or a block) has the same name as a variable in an outer scope. In such cases, the inner variable "shadows" the outer variable, meaning that references to the variable name within the inner scope will refer to the inner variable rather than the outer one.
+
+
