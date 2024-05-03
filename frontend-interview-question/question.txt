@@ -36,3 +36,22 @@
 11.Make snake ladder board
 12.Make calender of any month like date picker
 13.Implement throttle function ect
+
+**************************************************JAVASCRIPT***************************************************
+
+1.Design patterns like singleton, factory patterns, etc.
+2.Implement the publisher-subscriber pattern in Javascript
+3.Implement the map, filter, reduce, and for Each polyfill
+4.Implement the Function.bind, call, apply method on the Function Prototype
+5.Implement Async. parallel, Async.series which executes a set of async tasks parallel and in series.
+6.Prototype and Prototype inheritance
+7.How rendering work in the browser
+8.Event delegation and event propagation
+9.Implement Memoization
+10.Progressive Web application
+11.Clone an Object
+12.Debouncing and Throttling
+13.Implement clearAllTimeout()
+14.Build a Promise from scratch
+15.Event target - addEventListener, removeEventListener, dispatchEvent
+16.Intersection observe
