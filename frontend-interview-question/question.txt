@@ -1,0 +1,38 @@
+
+*****************************************REACT/MACHINE CODING********************************************
+
+1.Introduction JSX
+2.React Component
+3.Component State and Props
+4.Adding Style(CSS)
+5.Functional and Class components
+6.React Lifecycle Methods
+7.Virtual DOM
+8.React Hooks
+9.Custom Hooks
+10.Context API
+11.Synthetic Events
+12.Routing
+13.Data flow (Redux/Flux)
+14.Server-side rendering
+15.Unit testing
+16. Jest and React testing library
+17.Mocking Data
+18.Understanding Webpack(Bundler)
+19.Babel, env, prettier, linter
+
+*************************************************MACHINE CODING**************************************************
+
+1.Star Rating
+2.Design Pop over
+3.Design accordion
+4.Design carousel
+5.Design grid using HTML/CSS and Javascript with search and sort, event bubbling(Amazon onsite)
+6.Design Navbar
+7.infinte Scroll
+8.Typeahead / autocomplete using trie
+9.Implement tic tac toe
+10.Implement Debounce Function
+11.Make snake ladder board
+12.Make calender of any month like date picker
+13.Implement throttle function ect

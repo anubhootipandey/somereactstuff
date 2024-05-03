@@ -20,6 +20,3 @@
 --Element: An element is like a single piece of your user interface. It represents what you want to see on the screen, like a button, a paragraph of text, or an image. It's like a building block for your UI.
 --Component: A component is a collection of elements that work together to create a part of your user interface. It's like a reusable piece of code that defines how a specific part of your UI should look and behave. Components can be simple, like a button, or more complex, like a form or a whole page. They help you organize your code and make it easier to manage and maintain.
 
-5.
-
-
