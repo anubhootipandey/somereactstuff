@@ -1,0 +1,32 @@
+.App {
+  text-align: center;
+}
+
+.tabs-container{
+  width: 1000px;
+  margin: auto;
+}
+
+.tabs-container ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.tabs-container ul li button{
+  background-color: #e4e4e4;
+  color: #343a40;
+  padding: 0.5rem 20px;
+  border: none;
+  cursor: pointer;
+  margin-right: 18px;
+  font-weight: 600;
+}
+
+.active-btn{
+  background-color: slateblue;
+  color: white;
+}
