@@ -1,4 +1,5 @@
 import React from 'react';
+import Notification from './Notification/Notification';
 // import Accordion from './Accordion/Accordion';
 // import LoginModal from './LoginModal/LoginModal';
 // import Menu from './ResponsiveMenu/Menu';
@@ -15,6 +16,7 @@ const MainApp = () => {
         {/* <Menu /> */}
         {/* <LoginModal /> */}
         {/* <Accordion /> */}
+        <Notification />
     </div>
   )
 }
