@@ -15,7 +15,7 @@ const Notification = () => {
         <NotificationContainer />
         <button onClick={showNotifications}>Show Notification</button>
     </div>
-  )
-}
+  );
+};
 
 export default Notification;
