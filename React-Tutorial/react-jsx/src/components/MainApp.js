@@ -1,5 +1,6 @@
 import React from 'react';
-import LoginModal from './LoginModal/LoginModal';
+// import Accordion from './Accordion/Accordion';
+// import LoginModal from './LoginModal/LoginModal';
 // import Menu from './ResponsiveMenu/Menu';
 // import TernaryOperator from './Hooks/TernaryOperator';
 // import Hooks from './Hooks/Hooks';
@@ -12,7 +13,8 @@ const MainApp = () => {
         {/* <Hooks /> */}
         {/* <TernaryOperator /> */}
         {/* <Menu /> */}
-        <LoginModal />
+        {/* <LoginModal /> */}
+        {/* <Accordion /> */}
     </div>
   )
 }
