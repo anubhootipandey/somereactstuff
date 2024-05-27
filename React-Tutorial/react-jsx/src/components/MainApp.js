@@ -1,5 +1,6 @@
 import React from 'react';
-import TernaryOperator from './Hooks/TernaryOperator';
+import Menu from './ResponsiveMenu/Menu';
+// import TernaryOperator from './Hooks/TernaryOperator';
 // import Hooks from './Hooks/Hooks';
 // import EventHandling from './EventHandling/EventHandling';
 
@@ -8,7 +9,8 @@ const MainApp = () => {
     <div>
         {/* <EventHandling /> */}
         {/* <Hooks /> */}
-        <TernaryOperator />
+        {/* <TernaryOperator /> */}
+        <Menu />
     </div>
   )
 }
