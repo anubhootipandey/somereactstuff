@@ -1,12 +1,14 @@
 import React from 'react';
-import MainApp from './components/MainApp';
+import Form from './components/ControlledComponents/Form';
+// import MainApp from './components/MainApp';
 // import Main from './random/Main';
 
 const App = () => {
   return (
     <div>
       {/* <Main /> */}
-      <MainApp />
+      {/* <MainApp /> */}
+      <Form />
     </div>
   )
 }

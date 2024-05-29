@@ -1,5 +1,6 @@
 import React from 'react';
-import Notification from './Notification/Notification';
+// import CCInput from './ControlledComponents/CCInput';
+// import Notification from './Notification/Notification';
 // import Accordion from './Accordion/Accordion';
 // import LoginModal from './LoginModal/LoginModal';
 // import Menu from './ResponsiveMenu/Menu';
@@ -16,7 +17,8 @@ const MainApp = () => {
         {/* <Menu /> */}
         {/* <LoginModal /> */}
         {/* <Accordion /> */}
-        <Notification />
+        {/* <Notification /> */}
+        {/* <CCInput /> */}
     </div>
   )
 }
