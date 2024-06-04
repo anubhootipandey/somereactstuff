@@ -15,8 +15,9 @@ Display a friendly message if no items match the search term.
 import React, { useState } from 'react';
 
 const SearchFilter = () => {
-    const [fruitData, setFruitData] = useState(fruits);
+    const [fruitsData, setFruitsData] = useState(fruits);
     const [searchTerm, setSearchTerm] = useState("");
+
     const fruits = [
         'Apple',
         'Banana',
@@ -28,11 +29,24 @@ const SearchFilter = () => {
         'Pineapple',
         'Berry',
         'Strawberry'
-    ]
+    ] 
+
+    const handleInputChange = (e) => {
+        setSearchTerm(e.target.value);
+        console.log(searchTerm);
+    }
+
+    const fruitsDataFiltered = fruitsData.filter((fruit) => 
+        fruit.toLocaleLowerCase().includes(searchTerm.toLowerCase())
+    );
 
   return (
     <div>
-        <input type='search' placeholder='Search here...' onChange={searchFruit()} />
+        <input type='search' placeholder='Search here...' onChange={handleInputChange} />
+
+        {fruitsDataFiltered.map((fruit) => {
+            return <p> {fruit} </p>;
+        })}
 
     </div>
   )
