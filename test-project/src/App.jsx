@@ -1,23 +1,19 @@
-import "./App.css";
-import BgChanger from "./components/BgChanger";
-// import Card from "./components/Card";
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Counter from "./components/Counter/Counter";
+import Home from "./components/Counter/Home";
 
-function App() {
-  // let myObj = {
-  //   username: "anu",
-  //   age: 20
-  // }
-  // let newArr = [1, 2, 3]
-
+const App = () => {
   return (
     <>
-      {/* <h1 className="bg-green-400 text-black p-4 rounded-xl mb-4">Tailwind Test</h1> */}
-      {/* <Card channel="chaiaurcode" myObj={myObj} newArr={newArr} /> */}
-      {/* <Card username="Anu" btnText="visit me" />
-      <Card /> */}
-      <BgChanger />
+    <Home />
+      <Router>
+        <Routes>
+          <Route path="/counter" element={<Counter />} />
+        </Routes>
+      </Router>
     </>
   );
-}
+};
 
 export default App;

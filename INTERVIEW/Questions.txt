@@ -1,0 +1,34 @@
+1.What is pure function in javacsript?
+2.What is Lambda function?
+3.Difference between array.slice() and array.splice() method?
+4.What are higher order function?
+5.What are prototypes in javacsript?
+6.What are factory function?
+7.Difference between factory and constructor function?
+8.How do we set properties on the object which have constructor function?
+9.If we don't call constructor function with any keyword, then what will happen?
+10.How we will set common methods using constructor function?
+11.What is the type of class?
+12. What will be the ouput?
+    let arr = [1, 2, 3, 4, 5, -6, 7];
+    arr.length = 0;
+    console.log(arr);
+13.What is object.freeze and object.seal?
+14.Suppose we have an userData object which has id, name, age property. What will happen if we use object.freeze?
+15.How can we freeze only id property of the userData object?
+16.Make the id property rewrittable using object.freeze:-
+   const user = {
+    id: 123,
+    name: 'John',
+    age: 28,
+    address: {
+        city: 'Lucknow',
+        state: 'Uttar Pradesh'
+    }
+   }
+17.Difference between debouncing and throttling?
+18.what will be the output?
+   function foo(a, ...rest, c){
+    console.log(a, rest, c);
+   }
+   foo(1, 2, 3, 4, 5);
