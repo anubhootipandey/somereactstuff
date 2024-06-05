@@ -105,24 +105,50 @@
 
 /*-----------------------------------------------------------*/
 
-//Question 5: 
+// //Question 5: 
 
-var myObj = {
-    foo: "bar",
-    func: function() {
-        var self = this;
-        console.log("Outer Func: this.foo = " + this.foo);
-        console.log("Inter Func: self.foo = " + self.foo);
-        (
-            function() {
-                console.log("Outer Func: this.foo = " + this.foo);
-                console.log("Inter Func: self.foo = " + self.foo);
-            }
-        ());
+// var myObj = {
+//     foo: "bar",
+//     func: function() {
+//         var self = this;
+//         console.log("Outer Func: this.foo = " + this.foo);
+//         console.log("Inter Func: self.foo = " + self.foo);
+//         (
+//             function() {
+//                 console.log("Outer Func: this.foo = " + this.foo);
+//                 console.log("Inter Func: self.foo = " + self.foo);
+//             }
+//         ());
+//     }
+// }
+// myObj.func();
+
+
+/*-----------------------------------------------------------*/
+
+//Question 6: Reverse the string
+let name = "Aishwarya";
+
+//Implementation--->
+
+//with method
+// function reverseString(str){
+//     let reverse = str.split('').reverse().join('');
+//     console.log(reverse);
+// }
+
+// reverseString(name);
+
+//without method
+function reverseString(str) {
+    let reversed = '';  // Initialize an empty string to hold the reversed string
+    for (let i = str.length - 1; i >= 0; i--) {  // Loop from the last character to the first
+        reversed += str[i];  // Add each character to the reversed string
     }
+    return reversed;  
 }
-myObj.func();
 
+console.log(reverseString(name));  
 
 
 
