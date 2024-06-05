@@ -1,0 +1,39 @@
+1. What are polyfils?
+Ans: Polyfills are pieces of code (usually JavaScript) used to provide modern functionality on older browsers that do not natively support it. Essentially, they allow developers to use newer web standards and features without worrying about compatibility issues across different browsers.
+     For example, if a certain JavaScript feature is only supported in modern browsers, a polyfill can replicate that feature in older browsers. This helps ensure that a web application works consistently for all users, regardless of their browser version.
+     Common use cases for polyfills include adding support for ES6 features like Promise, Fetch API, Array.prototype.includes, and many others. Libraries such as Babel and core-js provide polyfills for various JavaScript features.
+
+2. Why polyfils are essential?
+Ans: Polyfills are essential for several reasons:
+a- Cross-Browser Compatibility: Different browsers may support different sets of features, and older browsers may not support modern web standards. Polyfills help bridge this gap, ensuring that a website or application works correctly across all browsers, including those that lack support for newer features.
+b- Enhanced User Experience: By using polyfills, developers can ensure that users on older browsers have a similar experience to those on modern browsers. This consistency is crucial for maintaining a good user experience and ensuring that all users can access the site's functionality.
+c- Future-Proofing Code: Polyfills allow developers to use the latest web technologies and standards without waiting for all browsers to catch up. This means developers can write modern, efficient code while still supporting users on older browsers.
+d- Cost-Effective Maintenance: Instead of writing custom fallback code for each browser and feature, developers can use polyfills to handle these differences. This reduces the complexity of the codebase and the effort required to maintain it.
+e- Improved Performance: Some modern features offer performance improvements over their older counterparts. By using polyfills, developers can take advantage of these improvements where supported, while still providing a fallback for older browsers.
+f- Accessibility: Ensuring that all users, regardless of their browser, can access and use a website is an important aspect of web accessibility. Polyfills contribute to making the web more inclusive by providing necessary features to users who might otherwise be excluded.
+g- Encouraging Modern Practices: Polyfills encourage developers to adopt modern web development practices and standards. By making it easier to use new features, polyfills help push the web forward and encourage the adoption of better techniques.
+
+3.Difference between forEach and map?
+Ans: use forEach when you need to perform an action for each element without needing a new array, and use map when you need to transform each element and obtain a new array with the transformed values.
+
+4.Example of Callback Hell?
+Ans: 
+
+5.What are Promises?
+
+6.What are Higher order function?
+
+7.What are prototype chain?
+Ans: Prototypes:
+
+Every JavaScript object has a prototype. A prototype is also an object from which the current object inherits properties and methods.
+The prototype itself can have its own prototype, forming a chain.
+Prototype Chain:
+When you try to access a property or method on an object, JavaScript will first look at the object itself.
+If the property or method is not found, JavaScript will look at the object's prototype, then the prototype's prototype, and so on, until it reaches Object.prototype, which is the end of the chain.
+Inheritance:
+This mechanism allows for property and method inheritance in JavaScript. Objects can share properties and methods without duplicating them, leading to more efficient memory usage and code reuse.
+The prototype chain in JavaScript allows objects to inherit properties and methods from other objects. This creates a chain of prototypes that JavaScript follows when accessing properties or methods. This mechanism supports code reuse and efficient memory usage.
+
+8.What is call apply and bind with example?
+Ans: 

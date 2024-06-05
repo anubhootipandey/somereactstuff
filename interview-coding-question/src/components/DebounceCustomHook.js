@@ -15,10 +15,28 @@ This setup ensures that debounceValue only updates after 1000 milliseconds have 
     
 */
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+
+const useDebounce = (text, delay) => {
+  const [debounce, setDebounce] = useState(text);
+
+  useEffect(() =>  {
+    const timer = setTimeout(() => {
+      setDebounce(text);
+    }, delay);
+
+
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [text, delay]);
+
+  return debounce;
+};
 
 const DebounceCustomHook = () => {
     const [text, setText] = useState('');
+    const debounceText = useDebounce(text, 1000);
     
   return (
     <div>
@@ -29,7 +47,7 @@ const DebounceCustomHook = () => {
         placeholder='Type something...'
         />
 
-        <p>Debounce Value : </p>
+        <p>Debounce Value : {debounceText}</p>
     </div>
   )
 }
