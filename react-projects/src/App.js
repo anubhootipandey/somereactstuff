@@ -1,8 +1,8 @@
 import './App.css';
-import Counter from './components/Counter';
+// import Counter from './components/Counter';
 // import RandomColor from './components/RandomColor';
 // import RecipeFinder from './components/RecipeFinder';
-// import GithubuserSearch from './components/GithubuserSearch';
+import GithubuserSearch from './components/GithubuserSearch';
 // import ShoppingList from './components/ShoppingList';
 // import Quote from './components/Quote';
 // import StorageExample from './components/StorageExample';
@@ -13,10 +13,10 @@ function App() {
       {/* <StorageExample /> */}
       {/* <Quote /> */}
       {/* <ShoppingList /> */}
-      {/* <GithubuserSearch /> */}
+      <GithubuserSearch />
       {/* <RecipeFinder /> */}
       {/* <RandomColor /> */}
-      <Counter />
+      {/* <Counter /> */}
     </div>
   );
 }

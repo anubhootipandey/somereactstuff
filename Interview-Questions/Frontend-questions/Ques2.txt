@@ -1,0 +1,36 @@
+
+@saswatamaitra3001
+1 year ago
+Frontend interview question
+1 . what is symentic tag in HTML
+2.What is position Absolute and position relative
+3.What is flex box
+4.What is box model in CSS
+	JS
+5.What is Event loop
+6.What will get result fast promise or setTimeOut 
+7.What is DOM
+8.What is Hoisting in JS
+9.What is closer
+10.What is Callback Hell
+11.What is Map Filter and reduce
+12.How many scopes are in the JS
+13.What is Call apply and bind
+14.What is this Keyword
+15.What is the difference between arrow function and normal function
+16.What is Memorisation
+17.What is spread operator and Rest operator
+18.let arr = {1,2,3,4,5}
+       let obj = {…arr}
+       Console.log(arr)
+
+
+React JS
+
+19.What is Virtual DOM
+20.Advantages of React JS
+21.What is one Way Data Binding
+22.How we can say data to the Different components
+23.How Redux works
+24.What is Higher order component
+25.Life cycle method in react js

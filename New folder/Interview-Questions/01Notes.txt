@@ -1,0 +1,70 @@
+Interview Questions
+
+
+Technical Skills
+
+1. Can you explain the difference between React and React Native?
+Answer: 
+React is a JavaScript library for building user interfaces, while React Native is a framework for building mobile applications using React.
+
+
+
+2. How do you handle state management in React?
+Answer: 
+I use setState() method to update the state of a component and manage state using hooks like useState or useReducer.
+
+
+
+3. What is JSX in React and why is it used?
+Answer: 
+JSX is a syntax extension for JavaScript that allows writing HTML elements in React code and is used to render components.
+
+
+
+
+
+Problem-Solving Skills
+
+1. Can you describe a challenging bug you encountered while working on a React project and how you resolved it?
+Answer: 
+I faced a bug related to asynchronous data fetching in React and resolved it by using async/await to handle promises correctly.
+
+
+
+2. How do you optimize performance in React applications?
+Answer: 
+I optimize performance by using shouldComponentUpdate or React.memo for preventing unnecessary re-renders and by lazy loading components.
+
+
+
+3. Explain how you would implement routing in a React application?
+Answer: 
+I would use React Router library to set up routing in a React application and define routes using Route component.
+
+
+
+
+
+Team Collaboration
+
+1. How do you communicate with team members while working on a collaborative project?
+Answer: 
+I use Slack for instant messaging, hold regular stand-up meetings, and provide updates on project progress through project management tools like Trello.
+
+
+
+2. Can you describe a time when you had to resolve a conflict within a team?
+Answer: 
+I resolved a conflict by actively listening to all team members, finding common ground, and proposing a compromise that satisfied everyone.
+
+
+
+3. How do you handle feedback from team members or supervisors?
+Answer: 
+I appreciate constructive feedback, reflect on it, and use it as an opportunity to grow and enhance my skills and performance.
+
+
+
+
+
+

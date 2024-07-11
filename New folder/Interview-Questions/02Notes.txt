@@ -1,0 +1,70 @@
+Interview Questions
+
+
+Opening Questions
+
+1. Can you provide a brief overview of your experience with React development?
+Answer: 
+I have worked on a few projects using React where I developed interactive user interfaces and implemented state management.
+
+
+
+2. What motivated you to apply for the React Developer Intern position?
+Answer: 
+I am enthusiastic about enhancing my React skills and gaining hands-on experience in a professional setting.
+
+
+
+3. How do you stay updated with the latest trends and advancements in React development?
+Answer: 
+I regularly follow React blogs, attend webinars, and participate in online communities to stay informed about new features and best practices.
+
+
+
+
+
+Technical Questions
+
+1. Can you explain the concept of virtual DOM in React?
+Answer: 
+The virtual DOM is a lightweight copy of the actual DOM that React uses to improve performance by minimizing direct manipulation of the real DOM.
+
+
+
+2. How would you handle state management in a React application?
+Answer: 
+I would use React's built-in state and props to manage component data and implement a state management library like Redux for more complex applications.
+
+
+
+3. What are the key differences between functional components and class components in React?
+Answer: 
+Functional components are stateless and use functional syntax, while class components have state and lifecycle methods and are defined using ES6 classes.
+
+
+
+
+
+Closing Questions
+
+1. Is there anything else you would like to share about your React development experience?
+Answer: 
+I have also worked on integrating React with APIs and building responsive web applications using React Bootstrap.
+
+
+
+2. How do you handle challenges or roadblocks while working on a React project?
+Answer: 
+I usually break down the problem into smaller tasks, seek help from teammates if needed, and leverage online resources to find solutions.
+
+
+
+3. Why do you think you would be a good fit for our React Developer Intern position?
+Answer: 
+I believe my strong foundation in React development, eagerness to learn, and collaborative attitude make me a suitable candidate for this role.
+
+
+
+
+
+

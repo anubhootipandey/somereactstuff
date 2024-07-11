@@ -127,7 +127,7 @@
 /*-----------------------------------------------------------*/
 
 //Question 6: Reverse the string
-let name = "Aishwarya";
+// let name = "Aishwarya";
 
 //Implementation--->
 
@@ -140,16 +140,33 @@ let name = "Aishwarya";
 // reverseString(name);
 
 //without method
-function reverseString(str) {
-    let reversed = '';  // Initialize an empty string to hold the reversed string
-    for (let i = str.length - 1; i >= 0; i--) {  // Loop from the last character to the first
-        reversed += str[i];  // Add each character to the reversed string
-    }
-    return reversed;  
+// function reverseString(str) {
+//     let reversed = '';  // Initialize an empty string to hold the reversed string
+//     for (let i = str.length - 1; i >= 0; i--) {  // Loop from the last character to the first
+//         reversed += str[i];  // Add each character to the reversed string
+//     }
+//     return reversed;  
+// }
+
+// console.log(reverseString(name));  
+
+
+/*-----------------------------------------------------------*/
+
+function createCounter() {
+    let count = 0;
+
+    return function(){
+        count++;
+        return count;
+    };
 }
 
-console.log(reverseString(name));  
+const counter1 = createCounter();
+const counter2 = createCounter();
 
-
+console.log(counter1());
+console.log(counter1());
+console.log(counter2());
 
 

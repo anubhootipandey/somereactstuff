@@ -37,3 +37,5 @@ The prototype chain in JavaScript allows objects to inherit properties and metho
 
 8.What is call apply and bind with example?
 Ans: 
+
+9.
