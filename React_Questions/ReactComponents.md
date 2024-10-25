@@ -27,5 +27,12 @@ In the child component, you can access the name prop and display or use it.
 
 5. What is the children prop in React?
 
--->
+--> The children prop allows you to pass content between the opening and closing tags of a component. 
+
+For example:
+
+<ParentComponent>
+  <p>This is a child element.</p>
+</ParentComponent>
+In the ParentComponent, you can access children to display the passed content. It’s useful for wrapping or nesting content inside components.
 
