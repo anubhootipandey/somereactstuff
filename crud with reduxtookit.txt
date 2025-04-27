@@ -12,6 +12,7 @@ ReactDOM.render(
   document.getElementById("root")
 );
 ----------------------------------
+
 // src/store.js
 import { configureStore } from "@reduxjs/toolkit";
 import itemReducer from "./itemSlice";
@@ -24,6 +25,7 @@ const store = configureStore({
 
 export default store;
 --------------------------------
+
 // src/itemSlice.js
 import { createSlice } from "@reduxjs/toolkit";
 
@@ -51,6 +53,7 @@ export const { addItem, editItem, deleteItem } = itemSlice.actions;
 
 export default itemSlice.reducer;
 ---------------------------------
+
 // src/App.js
 import React from "react";
 import ItemList from "./components/ItemList";
@@ -67,6 +70,7 @@ function App() {
 
 export default App;
 ----------------------------------------
+
 // src/components/AddItem.js
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
@@ -97,6 +101,7 @@ const AddItem = () => {
 
 export default AddItem;
 ----------------------------------
+
 // src/components/ItemList.js
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
