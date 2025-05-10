@@ -1,4 +1,4 @@
-REACTJS PROJECT STRUCTURE:-
+----------------------------------------- REACTJS PROJECT STRUCTURE -------------------------------------
 
 1. node_modules:-
 This folder contains all the packages and dependencies that are installed in your react app.
@@ -18,3 +18,5 @@ The goal of this file is to keep track of the exact version of every package tha
 
 6. package.json:-
 ye file contain krti h sare dependencies jo bhi installed  h hmare app me.
+
+---------------------------------------------------------------------------------------------------------------
