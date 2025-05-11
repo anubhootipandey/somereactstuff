@@ -1,5 +1,4 @@
 React with Redux- counter and update name: using functional component
-https://codesandbox.io/s/react-redux-hooks-counter-app-forked-vx6jux?file=/src/components/Counter.js
 
 index.js:
 import { StrictMode } from "react";
