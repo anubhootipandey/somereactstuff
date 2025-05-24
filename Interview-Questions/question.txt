@@ -48,4 +48,4 @@
 5.What is variable shadowing?
 --Variable shadowing occurs when a variable declared within a certain scope (such as a function or a block) has the same name as a variable in an outer scope. In such cases, the inner variable "shadows" the outer variable, meaning that references to the variable name within the inner scope will refer to the inner variable rather than the outer one.
 
-
+--------------------------------------------------------------------------------------------------------------------
