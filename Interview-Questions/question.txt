@@ -1,4 +1,5 @@
 -------------------Javascript-----------------------
+
 1.Difference between let, var and const?
 --var: Think of var as the classic, old-school way of declaring variables in JavaScript. It has function-level scope, which means it's accessible anywhere within the function it's declared in, even before the actual declaration (due to hoisting). Outside of functions, var variables are scoped globally.
 --let: let is like the modern, more disciplined sibling of var. It has block-level scope, meaning it's only accessible within the block it's declared in (like loops or if statements). Also, let doesn't get hoisted to the top of its block, so you can't use it before it's declared.
