@@ -1,6 +1,4 @@
 
-@saswatamaitra3001
-1 year ago
 Frontend interview question
 1 . what is symentic tag in HTML
 2.What is position Absolute and position relative

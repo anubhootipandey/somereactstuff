@@ -16,6 +16,8 @@ return(
 }
 }
 
+---------------------------------------------------------------------------------------------------------
+
 Q2. How to create components in React? (XPRate)
 Answer:
 There are two possible ways to create a component.
@@ -33,6 +35,7 @@ return <h1>{`Hello, ${this.props.message}`}</h1>
 }
 }
 
+---------------------------------------------------------------------------------------------------------
 
 Q3. When to use a class component over a functional
 component? (Google)
@@ -42,6 +45,7 @@ otherwise, use function component. However, from React 16.8, with the addition
 of Hooks, you could use state, lifecycle methods, and other features that were
 only available in-class components right in your function component.
 
+---------------------------------------------------------------------------------------------------------
 
 Q4. What is the difference between state and props? (Amazon)
 Answer:
@@ -50,6 +54,8 @@ that influences the output of render, they are different in their functionality 
 respect to components. Props get passed to the component similar to function
 parameters, whereas the state is managed within the component similar to
 variables declared within a function.
+
+---------------------------------------------------------------------------------------------------------
 
 Q5. Why should we not update the state directly? (Expedia)
 Answer:
@@ -63,6 +69,7 @@ this.setState({ message: 'Hello World' })
 Note: You can directly assign to the state object either in the constructor or
 using the latest javascript's class field declaration syntax.
 
+---------------------------------------------------------------------------------------------------------
 
 Q6.What are Synthetic Events in React.Js? (Gojek)
 Answer: A synthetic event is a cross-browser wrapper around the browser’s
@@ -74,6 +81,8 @@ actuality, React doesn’t attach event handlers to the nodes themselves. Instea
 a single event listener is attached to the root of the document. When an event is
 fired, React maps it to the appropriate component element.
 
+---------------------------------------------------------------------------------------------------------
+
 Q7.What are Event Handlers in React.js? (Amazon)
 Answer: Event handlers determine what action is to be taken whenever an
 event is fired. This could be a button click or a change in a text input.
@@ -82,6 +91,7 @@ your React app.
 Handling events with React elements is similar to handling events on DOM
 elements, with a few minor exceptions.
 
+---------------------------------------------------------------------------------------------------------
 
 Q8.What is the onClick handler in React? (Goldman Sachs)
 Answer: The React onClick event handler enables you to call a function and
@@ -96,6 +106,8 @@ In a React app, this would be written as follows:
 <button onClick={sayHello}>
 Say Hello
 <button>
+
+---------------------------------------------------------------------------------------------------------
 
 Q9.What are the different lifecycle methods in React? (Gojek)
 Answer: Every component in React has lifecycle methods that we can tap into,
@@ -142,6 +154,8 @@ Unmounting:
 componentWillUnmount( ) - This method is called just before the component
 gets destroyed. Any cleanup statements should be executed inside this method.
 
+---------------------------------------------------------------------------------------------------------
+
 Q10.What Is the concept of Mounting in React.JS? (Amazon)
 Answer: The name is self-explanatory. Mounting is the phase in which our React
 component mounts on the DOM (i.e., is created and inserted into the DOM).
@@ -160,6 +174,8 @@ This method is called after the component gets mounted on the DOM. Like
 componentWillMount, it is called once in a lifecycle. Before the execution of this
 method, the render method is called (i.e., we can access the DOM). We can make
 API calls and update the state with the API response.
+
+---------------------------------------------------------------------------------------------------------
 
 Q11.What is the Difference Between Rendering And Mounting?
 (OYO)
@@ -185,12 +201,15 @@ component. It may happen either through a state change or a prop change.
 The main difference between mounting and rendering is that mounting happens
 once, but rendering can happen any number of times.
 
+---------------------------------------------------------------------------------------------------------
+
 Q12.What are hooks in React? (Gojek)
 Answer: Hooks are a new feature added in React v16.8. It allows using all React
 features without writing class components. For example, before version 16.8, we
 need a class component to manage the state of a component. Now we can keep
 the state in a functional component using useState hook.
 
+---------------------------------------------------------------------------------------------------------
 
 Q13.Why React hooks was introduced? (Amazon)
 Answer: One reason to introduce hooks was the complexity in dealing with this
@@ -211,6 +230,8 @@ is, in the case of event listeners, we use componentDidMount() to bind an event
 and componentWillUnmount() to unbind. Hooks instead help to place related
 code together.
 
+---------------------------------------------------------------------------------------------------------
+
 Q14.How useState hook works? What is/are the arguments
 accepted by this hook and what is returned by the hook? (OYO)
 Answer:useState hook is a function that is used to store state value in a
@@ -221,6 +242,8 @@ We import useState first from React by
 import React, { useState } from "react";
 Later we use useState like:
 const [currentStateValue, functionToUpdateState] = useState(initialStateValue);
+
+---------------------------------------------------------------------------------------------------------
 
 Q15. How do React Components Communicate with each other?
 (Google)
